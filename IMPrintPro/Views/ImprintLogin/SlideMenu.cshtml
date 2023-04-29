@@ -1,0 +1,41 @@
+﻿@model IMPrintPro.Models.login
+ 
+@{
+    ViewData["Title"] = "SlideMenu";
+}
+<head>
+    <link href="~/css/navbar.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Vendor</a>
+        <a href="#">Staff</a>
+        <a href="ImprintLogin.cshtml">LogOut</a>
+
+        
+    </div>
+
+     
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+
+
+
+   

@@ -1,0 +1,18 @@
+﻿@model IMPrintPro.Models.login
+@{
+    ViewData["Title"] = "VendorExcel";
+}
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<div class="container"id="filedesign">
+    <p>Vendor</p>
+    <form method="post" class="vendor-form" asp-controller="Vendor" asp-action="VendorExcel" enctype="multipart/form-data">
+        <input type="file" name="file" class="fileId" />
+        <button type="submit" class="btn btn-sm btn-primary">Import File</button>
+        <a href="#">Download Sample</a>
+    </form>
+</div>
+
+
+ 
